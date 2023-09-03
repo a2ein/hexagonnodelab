@@ -5,7 +5,13 @@ background-color: rgba(240, 248, 255, 0.363);
 
    width: 100px; border: 10px solid rgba(0, 128, 0, 0.658); padding: 40px; margin: 10px;
 }
+body{
+    background-repeat: no-repeat;
+background-size: cover;
+       background-image: url("/lab2.gif");
+}
 .cs {
+ 
 padding-left: 25%;
  
 }
@@ -23,8 +29,9 @@ padding-left: 25%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
 }
- .header h1{
-
+.header h1{
+text-align: center;
+background-color: rgba(250, 235, 215, 0.425);
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
