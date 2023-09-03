@@ -1,16 +1,19 @@
 .main{  background-image: url("/lab.gif");
  }
+ .box{
+background-color: rgba(240, 248, 255, 0.363);
 
- body{
-
-    background-image: url("/lab2.gif");
-background-repeat: no-repeat;
-background-size: cover;
- }
+   width: 100px; border: 10px solid rgba(0, 128, 0, 0.658); padding: 40px; margin: 10px;
+}
+.cs {
+padding-left: 20%;
+ 
+}
 .content{
     display: flex;
     flex-direction: row;
-  
+  text-align: center;
+  flex-wrap: wrap;
 }
 .content a {
 
@@ -28,11 +31,7 @@ background-size: cover;
     
 }
 
- .box{
-background-color: rgba(240, 248, 255, 0.363);
 
-   width: 300px; border: 15px solid green; padding: 50px; margin: 20px;
-}
 .QNA form {
 
 background-image: url("/form.gif");
