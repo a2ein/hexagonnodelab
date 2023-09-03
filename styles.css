@@ -1,0 +1,46 @@
+.main{  background-image: url("/lab.gif");
+ }
+
+ body{
+
+    background-image: url("/lab2.gif");
+background-repeat: no-repeat;
+background-size: cover;
+ }
+.content{
+    display: flex;
+    flex-direction: row;
+  
+}
+.content a {
+
+    text-decoration: none;
+    color-interpolation-filters: auto;
+    color: rgb(0, 8, 34);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+ .header h1{
+
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    
+}
+
+ .box{
+background-color: rgba(240, 248, 255, 0.363);
+
+   width: 300px; border: 15px solid green; padding: 50px; margin: 20px;
+}
+.QNA form {
+
+background-image: url("/form.gif");
+
+background-size: contain;
+
+}
+div .scroll{
+max-width: 10px;
+    overflow: scroll;
+}
