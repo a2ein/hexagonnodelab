@@ -9,7 +9,9 @@
 
     
   <style>
-  
+  input[placeholder]{
+color:#fff;
+  }
   *{
     
     margin-top:10px;
@@ -118,9 +120,9 @@
   </div>
   <br>
   <form id="myForm">
-    <span class="in">Value of X = </span><input  type="number" id="xvalue" required> 
+    <span class="in">Value of X = </span><input  type="number" id="xvalue" placeholder="Enter the value of X" required> 
     <br><br>
-   <span class="in" >Value of Y =</span><input  type="number" id="yvalue" required>
+   <span class="in" >Value of Y =</span><input placeholder="Enter the value of Y" type="number" id="yvalue" required>
     <br><br>
     <button class="button" type="submit" id="sub">Get Answer</button>
   </form>
