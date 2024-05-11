@@ -1,163 +1,156 @@
-<!-- Add meta tag for mobile responsiveness -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-  /* Add mobile responsiveness styles */
-  @media only screen and (max-width: 768px) {
-   .display {
-      flex-direction: column;
-      align-items: center;
+<html>
+<head>
+  <title>Al-Khwarizmi.Ai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  <style>
+  
+  *{
+    
+    margin-top:10px;
+  }
+    .display{
+      
+      display:flex; flex-direction:column;
+      gap: 3px;
+      
+      .cl , .dl {
+        text-align:center;
+        width: 50%;
+        padding: 5px 10px 5px;
+      background:none;
+      border:none;
+      font-size:16.5px;
+      }
+      .cl{
+        outline: 1px solid #f01818;
+      } 
+      .dl{
+        
+        color:#919191;
+      }
+      .answer{
+        text-align: center;
+        color:#d41548;
+        font-size:25px;
+      outline: 1px  solid aqua;
+        padding:50px ;
+        background:#e4f5f4;
+        align-items: justify-ontent;
+    
+    #indicator{
+      color:white;
+      text-align: left !important;
     }
-   .btn {
-      flex-direction: column;
-      align-items: center;
-    }
-   .button {
-      width: 100%;
-    }
-    form {
-      width: 100%;
-    }
-    input[type="number"] {
-      width: 100%;
-    }
-  }
-
-  /* Rest of the styles remain the same */
-  * {
-    margin-top: 10px;
-  }
- .display {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-  }
- .cl,.dl {
-    text-align: center;
-    width: 50%;
-    padding: 5px 10px 5px;
-    background: none;
-    border: none;
-    font-size: 16.5px;
-  }
- .cl {
-    outline: 1px solid #f01818;
-  }
- .dl {
-    color: #919191;
-  }
- .answer {
-    text-align: center;
-    color: #d41548;
-    font-size: 25px;
-    outline: 1px solid aqua;
-    padding: 50px;
-    background: #e4f5f4;
-    align-items: justify-content;
-  }
-  #indicator {
-    color: white;
-    text-align: left!important;
-  }
-  span {
-    font-style: italic;
-    font-weight: bold;
-    font-size: 4px;
-    color: #004;
-    background: #5533;
-  }
- .button {
-    font-size: 18px;
-    font-weight: 300;
-    width: 100%;
-    height: 10%;
-    padding: 5px 10px 5px;
-    background: none;
-    border: none;
-    outline: 1px solid green;
-  }
-  form {
-   .in {
-      background: #1d5963;
-      color: #24f064;
-    }
-    input {
-      padding: 6px;
-      color: white;
-      font-weight: 400;
-      font-size: 15px;
-      background: #13ab73;
-      border: none;
-      outline: none;
-    }
-  }
- .btn {
-    padding: 5px;
-    gap: 1rem;
-    display: flex;
-    flex-direction: row;
-  }
-</style>
-
-<!-- Rest of the HTML remains the same -->
-<div class="display">
-  <label class="answer">Result.....
-
-  </label>
-  <label class="btn">
-    <button class="cl" onclick="clar()">Coming</button>
-    <button id="indicator" class="dl" type="submit" onclick="error()">soon</button>
-  </label>
-
-  <br><br>
-  <span>
-    Please input the Value of X & Y with sign (-) if X/Y is negative. If both are
-    positive, you don't need to submit with a sign. <b> Format :( X+iY )
-    only input X & Y value don't need to put i, + sign but never forget to put - sign</b> </span>
-</div>
-<br>
-<form id="myForm">
-  <span class="in">Value of X = </span><input type="number" id="xvalue" required>
-  <br><br>
-  <span class="in" >Value of Y =</span><input type="number" id="yvalue" required>
-  <br><br>
-  <button class="button" type="submit" id="sub">Get Answer</button>
-</form>
-
-<script>
-  // Rest of the JavaScript remains the same
-  document.getElementById("myForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const display = document.querySelector(".answer");
-    const a = parseFloat(document.querySelector("#xvalue").value);
-    const b = parseFloat(document.querySelector("#yvalue").value);
-    const bsn = Math.sign(b);
-
-    function bsign() {
-      if (bsn == 1) {
-        return " + ";
-      } else {
-        return " - ";
+      }
+      
+      
+      span{
+        font-style: italic;
+        font-weight: bold;
+        font-size: 4px;
+        color: #004;
+        background: #5533;
       }
     }
+    
+    
+    .button{
+      font-size:18px; font-weight:300;
+      width:100%;
+      height: 10%;
+      padding: 5px 10px 5px;
+      background:none;
+      border:none;
+      outline: 1px solid green;
+    }
+    form{
+      .in{
+        background: #1d5963 ;
+        
+        color:#24f064;
+      }
+      
+      
+      input{
+        padding:6px;
+        color: white; font-weight:400;
+        font-size:15px;
+        background: #13ab73;
+        border:none;outline:none;
+      }
+    }
+    .btn{
+      padding: 5px;
+      gap: 1rem;
+      display:flex;
+      flex-direction:row;
+    }
+  </style>
+  <div class="display">
+    <label class="answer">Result.....
+    
+    
+    
+    
+  </label>
+  <label class="btn">
+    
+      <button class="cl"  onclick="clar()">Coming</button>
+  
+  <button id="indicator" class="dl" type="submit"  onclick="error()">soon</button>
+  </label>
 
-    let mod_1 = a ** 2 + b ** 2; // Corrected exponentiation syntax
-    let mod = Math.sqrt(mod_1); // Used Math.sqrt for square root
-    let left = a + mod;
-    let right = -a + mod;
-    let left_2 = Math.sqrt(left / 2); // Used Math.sqrt for square root
-    let right_2 = Math.sqrt(Math.abs(right) / 2); // Used Math.sqrt for square root
+    <br><br> 
+<span>
+    Please  input the Value of X & Y with sign (-) if X/Y is negative. If both are
+    positive, you don't need to submit with a sign. <b> Format :( X+iY ) 
+    only input X & Y value don't need to put i , + sign but never forget to put - sign</b> </span>
+  </div>
+  <br>
+  <form id="myForm">
+    <span class="in">Value of X = </span><input  type="number" id="xvalue" required> 
+    <br><br>
+   <span class="in" >Value of Y =</span><input  type="number" id="yvalue" required>
+    <br><br>
+    <button class="button" type="submit" id="sub">Get Answer</button>
+  </form>
 
-    let real_1 = (a + bsn * b) / 2;
-    let real_2 = Math.sqrt(1 - real_1 ** 2);
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      event.preventDefault();
 
-    display.textContent = "The Answer is : " + "( " + left + bsign() + "i" + right + " )";
+      const display = document.querySelector(".answer");
+      const a = parseFloat(document.querySelector("#xvalue").value);
+      const b = parseFloat(document.querySelector("#yvalue").value);
+      const bsn = Math.sign(b);
 
-    let d = document.getElementById("sub");
-    d.addEventListener("click", function() {
-      clar();
-      error();
-    });
-  });
-</script>
+      function bsign() {
+        if (bsn == 1) {
+          return " + ";
+        } else {
+          return " - ";
+        }
+      }
+
+      let mod_1 = a ** 2 + b ** 2; // Corrected exponentiation syntax
+      let mod = Math.sqrt(mod_1); // Used Math.sqrt for square root
+      let left = a + mod;
+      let right = -a + mod;
+      let left_2 = Math.sqrt(left / 2); // Used Math.sqrt for square root
+      let right_2 = Math.sqrt(Math.abs(right) / 2); // Used Math.abs to handle negative case
+
+      const show = `± ( ${left_2} ${bsign()} ${right_2}i)`;
+
+
+
+      display.innerHTML = show;
+   function clar(){
+  display.innerHTML= "cleared ! (:";
+  
+  
+  
+};
+ });
+  </script>
+</html>
