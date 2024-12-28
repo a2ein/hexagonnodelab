@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const events = [
-        { name: 'Pendulum', date: '1', description: '', modelUrl: 'https://www.myphysicslab.com/pendulum/pendulum-en.html' },
-        { name: 'Magnets&COmpass', date: '2', description: '', modelUrl: 'https://phet.colorado.edu/sims/html/magnet-and-compass/latest/magnet-and-compass_all.html' },{
-            name:'electromagnetic',date:'3',description:'',modelUrl:'https://phet.colorado.edu/sims/html/faradays-electromagnetic-lab/latest/faradays-electromagnetic-lab_all.html'
+        { name: 'States Of matter', date: '1', description: '', modelUrl: 'https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_all.html' },
+        { name: 'DENSITY', date: '2', description: '', modelUrl: 'https://phet.colorado.edu/sims/html/density/latest/density_all.html' },{
+            name:'DIFFUSION',date:'3',description:'',modelUrl:'https://phet.colorado.edu/sims/html/diffusion/latest/diffusion_all.html'
         },
     ];
     

@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const events = [
-        { name: 'Pendulum', date: '1', description: '', modelUrl: 'https://www.myphysicslab.com/pendulum/pendulum-en.html' },
-        { name: 'Magnets&COmpass', date: '2', description: '', modelUrl: 'https://phet.colorado.edu/sims/html/magnet-and-compass/latest/magnet-and-compass_all.html' },{
-            name:'electromagnetic',date:'3',description:'',modelUrl:'https://phet.colorado.edu/sims/html/faradays-electromagnetic-lab/latest/faradays-electromagnetic-lab_all.html'
+        { name: 'Center and variability', date: '1', description: '', modelUrl: 'https://phet.colorado.edu/sims/html/center-and-variability/latest/center-and-variability_all.html' },
+        { name: 'FRACTION', date: '2', description: '', modelUrl: 'https://phet.colorado.edu/sims/html/fractions-mixed-numbers/latest/fractions-mixed-numbers_all.html' },{
+            name:'MEAN',date:'3',description:'',modelUrl:'https://phet.colorado.edu/sims/html/mean-share-and-balance/latest/mean-share-and-balance_all.html'
         },
     ];
     
