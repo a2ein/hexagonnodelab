@@ -3,34 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f3f3f3;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5em;
-            color: #333;
-        }
-        p {
-            font-size: 1.2em;
-            color: #666;
-        }
-    </style>
+    <title>NodeLab Experiment</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>We're Under Construction</h1>
-        <p>Our website is currently under construction. We'll be here soon with our new awesome site. Stay tuned!</p>
-    </div>
+    <header>
+        <h1>NodeLab Experiment</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#apparatus">Apparatus</a></li>
+                <li><a href="#experiments">Experiments</a></li>
+                <li><a href="#simulations">Simulations</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#formulas">Formulas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to NodeLab</h2>
+        <p>Your source for interactive scientific learning.</p>
+    </section>
+
+    <section id="apparatus">
+        <h2>Apparatus</h2>
+        <div class="apparatus-list">
+            <div class="apparatus-item">
+                <h3>PHYSICS</h3>
+                <!-- <img src="images/phy.jpg" alt="Slide Calipers"> -->
+               <a class="ap-title" href="department/physics/phyapparatus.html"><p>PHYSICS APPARATUS</p> </a> 
+            </div>
+            <div class="apparatus-item">
+           <h3>MATH</h3>   
+                <!-- <img src="images/math.jpg" alt="Slide Calipers"> -->
+                   <a class="ap-title" href="department/math/mathapp.html"><p>MATH APPARATUS</p></a>
+            </div>
+
+            <div class="apparatus-item">
+                <h3>CHEMISTRY</h3>
+                <!-- <img src="images/che.jpg" alt="Vernier Scale"> -->
+            <a class="ap-title" href="department/chemistry/chemistryapp.html">  <p>CHEMISTRY APPARATUS</p></a>   
+            </div>
+        </div>
+    </section>
+
+    <section id="experiments">
+        <h2>Experiments</h2>
+        <p>Step-by-step guides and video tutorials for key experiments.</p>
+    </section>
+
+    <section id="simulations">
+        <h2></h2>
+        <div class="simulation-list">
+            <div class="simulation-item">
+                <h3>PHYSICS</h3>
+                
+            </div>
+            <div class="simulation-item">
+                <h3>MATH</h3>
+               
+            </div>
+            <div class="simulation-item">
+                <h3>CHEMISTRY</h3>
+               
+            </div>
+        </div>
+    </section>
+
+    <section id="resources">
+        <h2>Resources</h2>
+        <p>Textbooks, articles, and downloadable content.</p>
+    </section>
+
+    <section id="formulas">
+        <h2>Formula Explanation</h2>
+        <p>Interactive breakdown of complex formulas.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 NodeLab. All rights reserved.</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
 </body>
 </html>

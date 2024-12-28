@@ -1,0 +1,108 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+
+}
+.navdiv  { 
+    margin: 5px;
+padding: 10px;
+background-color: #d9e0e9d7;
+
+border-color: aqua;
+    }
+.navdiv ul { 
+
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+.sr {
+
+display: flex;
+
+align-items: center;
+justify-content: space-around;
+
+}
+.sr #btn {
+
+border: none;
+background-image: linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05))  ,url("search.png");
+background-repeat: no-repeat;
+
+}
+.sr  #sear {
+
+border: none;
+text-align: center;
+
+}
+.navli{
+
+    font-weight: bold;
+    font-family: Times, serif;
+    font-size: 18px;
+    list-style: none;
+color: rgb(20, 20, 20);
+}
+
+.main{  background-image: url("/lab.gif");
+ }
+ .box{
+
+
+
+
+
+
+background-color: rgba(240, 248, 255, 0.363);
+
+   width: 100px; border: 10px solid rgba(0, 128, 0, 0.658); padding: 40px; margin: 10px;
+}
+body{
+    background-repeat: no-repeat;
+background-size: cover;
+       background-image: url("/lab2.gif");
+}
+.cs {
+ 
+padding-left: 25%;
+ 
+}
+.content{
+    display: flex;
+    flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.content a {
+
+    text-decoration: none;
+    color-interpolation-filters: auto;
+    color: rgb(0, 8, 34);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+.header h1{
+text-align: center;
+background-color: rgba(250, 235, 215, 0.425);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    
+}
+
+
+.QNA form {
+
+background-image: url("/form.gif");
+
+background-size: contain;
+
+}
+div .scroll{
+max-width: 10px;
+    overflow: scroll;
+}

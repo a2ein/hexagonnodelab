@@ -1,19 +1,11 @@
-var intext = "Node means joint,center,..Here Node Lab means joint lab where you may get all the popular lab in one tab.Free to use,easy to understand";
-var coll = null ;
-function myFunction() {
-  document.getElementById("p1").innerHTML = intext;
+document.addEventListener('DOMContentLoaded', (event) => {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        section.style.animationDelay = `${Array.from(sections).indexOf(section) * 0.3}s`;
+    });
 
-}
-function btn2Function ()
-{
-
-
-
-document.getElementById("p1").innerHTML = coll ;
-
-
-
-
-
-
-}
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Your message has been sent!');
+    });
+});

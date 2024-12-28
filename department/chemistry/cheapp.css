@@ -1,0 +1,74 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://sukrajclasses.com/wp-content/uploads/2020/06/physics-sukrajclasses.com_.gif');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+body::before {
+    content: "";
+    background-image: url('https://sukrajclasses.com/wp-content/uploads/2020/06/physics-sukrajclasses.com_.gif');
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+header, footer, section {
+    background-color: rgba(197, 201, 198, 0.74);
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #008cff;
+    margin-bottom: 15px;
+}
+
+p {
+    text-align: justify;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+button{
+
+    color:green;background: white;
+    background-size: cover;
+        border: none;
+    }
